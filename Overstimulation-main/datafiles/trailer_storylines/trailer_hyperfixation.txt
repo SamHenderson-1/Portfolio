@@ -1,0 +1,84 @@
+{
+Start
+Him: "Okay... I won't, I promise. I'm 30 somethin' now y'know, don't go treating me like a kid.
+Him: "Anyways, how'd you like my ride tonight? 
+Him: "[INCREMENT_SPEED, HYPERFIX(2)]It's the oldest model, a 1980 Cadillac Coupe De Ville in pretty good condition if you ask me.[DECREMENT_SPEED]"
+RESPONSES
+"Yeah, the leather seats were comfy. Surprisingly no stains either." -> Comfy
+"The... convertible? Yeah it was nice, I always wanted one myself." -> Convertible
+"A ride? I mean something like that hasn't happened yet..." -> Flirtatious
+"Right... Yeah!" -> Right
+}
+
+{
+Comfy
+Him: "You think? I got them custom made with a revamped A/C system and a killer speaker set just for nights like these."
+Him: "Installed new headlights because the old ones were tacky, but I like older stuff."
+}
+{
+Convertible
+Him: "Huh? What do you mean 'convertible'? Okay, there are some great convertible models out there, but this is not one of them."
+Him: "Could you not tell? Thought you had some taste..."
+-> HyperfixationCars
+}
+{
+Flirtatious
+Him: "Wait what? Oh, I see what you did there... I think? Seems like I'm missing a lot of jokes tonight for some reason.[INCREMENT_PROPERTY(*Confused, 1)]"
+}
+{
+Right
+Him: "Are you... even paying attention? I think you might've missed my question or something..."
+}
+{
+HyperfixationCars
+You: "[INCREMENT_SPEED, HYPERFIX(2, 0.2)]Oh, I must have mistaken the model you said for the 1982 Cadillac Coupe Le Cabriolet! My bad."
+RESPONSES
+Stop -> CarsResponse
+Talk about the 1982 Cadillac Coupe Le Cabriolet. -> HyperfixationCars1
+}
+{
+HyperfixationCars1
+You: "[INCREMENT_SPEED, HYPERFIX(2, 0.3)]It's an incredible model for its time, a luxury car with a convertible top that almost looks identical to the one you've got out back otherwise."
+RESPONSES
+Stop -> CarsResponse
+Isn't the Coupe Le Cabriolet facinating? -> HyperfixationCars2
+}
+{
+HyperfixationCars2
+You: "[INCREMENT_SPEED, HYPERFIX(2, 0.4)]It's a lowrider, and people who show them at car shows typically have to do quite a lot of work to fix them up."
+RESPONSES
+Stop -> CarsResponse
+Coupe Le Cabriolets are sooo rare. -> HyperfixationCars3
+}
+{
+HyperfixationCars3
+You: "[INCREMENT_SPEED, HYPERFIX(2, 0.6)]They are very rare to find, especially in any kind of good condition. Which makes them all the more fun to see in their full glory!"  
+RESPONSES
+Stop -> CarsResponse
+So much work goes into them. -> HyperfixationCars4
+}
+{
+HyperfixationCars4
+You: "[INCREMENT_SPEED, HYPERFIX(2, 0.8)]Usually, many parts have to be replaced and rebuilt, and the entire car repainted as well."
+RESPONSES
+Stop -> CarsResponse
+And that's what makes them cool. -> HyperfixationCars5
+}
+{
+HyperfixationCars5
+You: "[INCREMENT_SPEED, HYPERFIX(2, 1)]It's cool to see how hard people work on these cars, they put months of effort into cleaning them up and the result is always amazing!"
+RESPONSES
+Stop -> CarsResponse
+We should go to a car show! -> HyperfixationCars6
+}
+{
+HyperfixationCars6
+You: "[INCREMENT_SPEED]We should definitely go to a car show sometime, I'd love to hear your opinion on other cars from the 80's!"
+-> CarsResponse
+}
+{
+CarsResponse
+Him: [SET_SPEED(0)]"Wow, I'm... impressed by your knowledge of cars from the golden age."
+Him: "Y'know, maybe we should go to one of those car shows sometime, maybe I'll even let you drive the puppy outside."
+Him: "Okay, back to the menu..."
+}

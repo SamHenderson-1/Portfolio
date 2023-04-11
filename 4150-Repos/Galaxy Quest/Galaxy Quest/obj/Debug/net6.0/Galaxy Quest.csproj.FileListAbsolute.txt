@@ -1,0 +1,15 @@
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\bin\Debug\net6.0\Galaxy Quest.exe
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\bin\Debug\net6.0\Galaxy Quest.deps.json
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\bin\Debug\net6.0\Galaxy Quest.runtimeconfig.json
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\bin\Debug\net6.0\Galaxy Quest.dll
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\bin\Debug\net6.0\Galaxy Quest.pdb
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\Galaxy Quest.csproj.AssemblyReference.cache
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\Galaxy Quest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\Galaxy Quest.AssemblyInfoInputs.cache
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\Galaxy Quest.AssemblyInfo.cs
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\Galaxy Quest.csproj.CoreCompileInputs.cache
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\Galaxy Quest.dll
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\refint\Galaxy Quest.dll
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\Galaxy Quest.pdb
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\Galaxy Quest.genruntimeconfig.cache
+C:\Users\Sam Henderson\source\repos\Galaxy Quest\Galaxy Quest\obj\Debug\net6.0\ref\Galaxy Quest.dll

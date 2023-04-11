@@ -1,0 +1,103 @@
+{
+Start
+Him: "[DATE_JUMP]So... isn't it just the best here? [DATE_JUMP]Y'know, I always save this place for people I really like."
+Him: "[DATE_JUMP]It's an atmosphere you can't find in any other place. I don't know how to describe it..."
+Him: "[DATE_JUMP]Why don't you do it for me? [DATE_JUMP]Whaddya think of this place?"
+RESPONSES
+"I think it's great!" -> Great
+"It's kind of loud." -> Loud
+"I think I'll get the breadsticks." -> Breadsticks
+"Hmm..." -> Hmm
+}
+{
+Great
+Him: "[DATE_JUMP, INCREMENT_SPEED]Well, I'm glad you like it. A man of my taste is one I can get along with."
+-> Section 2
+}
+{
+Loud
+Him: "[DECREMENT_SPEED]Oh, yeah I guess so, I'm just a big fan of this scene."
+-> Section 2
+}
+{
+Breadsticks
+Him: "[DATE_JUMP, DECREMENT_SPEED]Huh?"
+Him: "Okay... I think I'll get us a round of drinks, [DATE_JUMP]sound good?"
+-> Section 2
+}
+{
+Hmm
+Him: "[DECREMENT_SPEED]...oh, you look sorta lost in thought."
+Him: ...
+Him: "Guess it's a lot to take in, huh."
+-> Section 2
+}
+{
+Section 2
+Him: "[DATE_JUMP]Well anyways, I'm interested in what you're about."
+Him: "[DATE_JUMP]Do you have a favorite drink? You more of a [DATE_JUMP]fancy glass or a [DATE_JUMP]rough tankard kind of guy?"
+Him: "[DATE_JUMP]Me? I'm more of a whiskey on the rocks with a splash of coke. [DATE_JUMP]Basic, but it helps it go down easier. But I'll order whatever you want to get." 
+RESPONSES
+"What about ginger beer with some lime instead?" -> Ginger
+"I just like water." -> Water
+"I love rocks, I've got a huge collection back at home!" -> Rocks
+"I'm not sure..." -> Unsure
+}
+{
+Ginger
+Him: "[DATE_JUMP, INCREMENT_SPEED]Wow, I'm impressed."
+Him: "[DATE_JUMP]That's a great choice, you really know your stuff when it comes to alcohol."
+-> Section 3
+}
+{
+Water
+Him: "Alright, I mean that's more vanilla than actual vanilla but I won't judge."
+-> Section 3
+}
+{
+Rocks
+Him: "[DECREMENT_SPEED] Oh... well that's something."
+Him: "Rocks aren't really my favorite, [DATE_JUMP]crystals and gems are good though."
+-> Section 3
+}
+{
+Unsure
+Him: "[DECREMENT_SPEED]It's kinda hard to decide."
+Him: "There's lots of them to choose from though, that's for sure..."
+-> Section 3
+}
+{
+Section 3
+Him: "[DATE_JUMP, SAVE_SPEED]Oh, Looks like our drinks are here..."
+Waitress: "I've got two drinks coming right up!"
+Waitress: "First round is on the house, good lookin' folk like this young fellow sitting across from you actually deserve it after all..."
+Waitress: "Who's this one? Weren't you in here last week wit-[INCREMENT_SPEED(3)]"
+Him: "[DATE_JUMP, DECREMENT_SPEED]H-Hey now, let's not go into that [DATE_JUMP, DECREMENT_SPEED(3)]old [DATE_JUMP]friend..."
+Waitress: "[INCREMENT_SPEED(2)]Who're you callin' old huh? [INCREMENT_SPEED]I pulled more men last week than you have in the past month and I work a full time job." 
+Waitress: [DECREMENT_SPEED]"Beats you at least, drunk fool." 
+Him: "[DECREMENT_SPEED(4), DATE_JUMP]Quality over [DATE_JUMP]quantity."
+Him: "[DATE_JUMP, LOAD_SPEED]I may be a man of the town but you know I can [DATE_JUMP]afford to pick carefully."
+Him: "This guy's an [DATE_JUMP]absolute charmer and you can't deny that. [DATE_JUMP]Whaddya think, am I right?"
+}
+Options:
+1, You: "I mean, you are kind of haggard, and you definitely drink like an old sailor..."
+Him: "Haah, So I'm a pirate now? I kind of like that image... It's quite fitting for my acquired taste and rugged physique. Thanks for the compliment."
+2, You: "I mean it's not really like either of you should be bragging about all that anyways. People aren't just objects in your little games, you know."
+Him: "....oh. No need to be so serious man, I was just pulling your leg."
+3, You: "I don't feel like I pulled anything. My legs are fine."
+Him: "Oh... That's good...? I feel like I'm missing a joke here..."
+4, You: "I mean..."
+Him: "...Well your silence speaks volumes, I'm clearly right."
+Waitress: "Ugh, y'know you could stand to lose some of that cockiness, hun. It'd serve you well when talking to a lady, that's for sure..."
+Him: "Haah, it was always like you to undermine my greatest features... Well, I'm sure you've got other customers to bother, don't-cha? It was nice introducing you two though."
+Waitress: "Well take care now you... I'm serious about that! No more late nights, and don't drink yourself into a coma. I don't want to see it on our tab here."
+Him: "Okay... I won't, I promise. I'm 30 somethin' now y'know, don't go treating me like a kid.
+Anyways, how'd you like my ride tonight? It's the oldest model, a Red Cadillac in pretty good condition if you ask me."
+Options:
+1, You: "Yeah, the leather seats were comfy. Surprisingly no stains either."
+Him: "You think? I got them custom made with a revamped A/C system and a killer speaker set just for nights like these. Installed new headlights because the old ones were tacky, but I like older stuff."
+
+
+2, You: "The... convertible? Yeah it was nice, I always wanted one myself."
+Him: "Huh? What do you mean ‘convertible'? Okay, there are some great convertible models out there, but this is not one of them. Could you not tell? Thought you had some taste..."
+3, You: "I mean something like that hasn't happened yet..."

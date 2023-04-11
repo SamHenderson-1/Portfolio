@@ -1,0 +1,23 @@
+{
+Start
+Him: Hello. How are you doing?
+RESPONSES
+Good. -> Good Ending
+Not so hot. -> Concerned Ending
+... -> Start
+I'm not quite sure... -> Uncertainty
+}
+{
+Good Ending
+Him: Great! Glad to hear it.
+}
+{
+Concerned Ending
+Him: Oh, I'm sorry to hear that.
+}
+{
+Uncertainty
+Him: I'll give you some time to think about it.
+Him:...
+... -> Start
+}

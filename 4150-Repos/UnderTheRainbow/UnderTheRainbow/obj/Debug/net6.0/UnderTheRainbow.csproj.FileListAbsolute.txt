@@ -1,0 +1,15 @@
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\bin\Debug\net6.0\UnderTheRainbow.exe
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\bin\Debug\net6.0\UnderTheRainbow.deps.json
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\bin\Debug\net6.0\UnderTheRainbow.runtimeconfig.json
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\bin\Debug\net6.0\UnderTheRainbow.dll
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\bin\Debug\net6.0\UnderTheRainbow.pdb
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\UnderTheRainbow.csproj.AssemblyReference.cache
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\UnderTheRainbow.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\UnderTheRainbow.AssemblyInfoInputs.cache
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\UnderTheRainbow.AssemblyInfo.cs
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\UnderTheRainbow.csproj.CoreCompileInputs.cache
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\UnderTheRainbow.dll
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\refint\UnderTheRainbow.dll
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\UnderTheRainbow.pdb
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\UnderTheRainbow.genruntimeconfig.cache
+C:\Users\Sam Henderson\source\repos\UnderTheRainbow\UnderTheRainbow\obj\Debug\net6.0\ref\UnderTheRainbow.dll

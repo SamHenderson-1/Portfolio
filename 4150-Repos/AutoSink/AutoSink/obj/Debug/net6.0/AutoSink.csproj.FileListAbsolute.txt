@@ -1,0 +1,15 @@
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\bin\Debug\net6.0\AutoSink.exe
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\bin\Debug\net6.0\AutoSink.deps.json
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\bin\Debug\net6.0\AutoSink.runtimeconfig.json
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\bin\Debug\net6.0\AutoSink.dll
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\bin\Debug\net6.0\AutoSink.pdb
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\AutoSink.csproj.AssemblyReference.cache
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\AutoSink.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\AutoSink.AssemblyInfoInputs.cache
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\AutoSink.AssemblyInfo.cs
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\AutoSink.csproj.CoreCompileInputs.cache
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\AutoSink.dll
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\refint\AutoSink.dll
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\AutoSink.pdb
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\AutoSink.genruntimeconfig.cache
+C:\Users\Sam Henderson\source\repos\AutoSink\AutoSink\obj\Debug\net6.0\ref\AutoSink.dll

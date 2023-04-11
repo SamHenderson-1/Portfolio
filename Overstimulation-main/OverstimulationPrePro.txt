@@ -1,0 +1,44 @@
+The Date:
+Hipster that tries to be different
+tough guy, leather jacket, combat boots, intimidating appearance
+potentially older
+really like alcohol
+talks to others while on the date
+inside jokes are frequent
+passionate about interests
+really observant of behaviors
+pushy
+doesn't quite understand symptoms
+attention seeker
+
+The Setting: 
+Loud bar with live music
+Sit in a booth with opening on the left. 
+Blues, lots of horns
+Noisy, perhaps easy to be distracted in
+Clearly out of your element
+
+MVP:
+Visual novel dating sim
+
+Win States:
+
+Lose States:
+
+Potential mechanics:
+Tutorial via texting
+Tone mechanic where you have to guess the tone that person is talking in. 
+Optional VA
+Words you hear or say are echoed visually in the subtitles and in the audio.
+In order to keep focus during a conversation, the player must continuously use the scroll wheel while someone else is talking, or else the text and audio will begin to 
+distort and blur.
+There will be a generic dialogue option to laugh and say something like, "That's very interesting." in case you can't think of a good way to respond or you missed what 
+the other person said.
+When the date mentions an interest they have that you might share, there is a risk that you could fall down a rabbit hole of only having dialogue options gushing about
+that interest.
+Randomly distort the name of the date every so often
+Characters are faceless and mannequin-like to show that you have trouble 
+Character creation where you input data on yourself and that modifies how the date treats you
+
+Devlopment:
+Write each line with a defined tone.

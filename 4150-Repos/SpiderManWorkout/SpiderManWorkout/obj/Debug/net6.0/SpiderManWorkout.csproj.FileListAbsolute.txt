@@ -1,0 +1,15 @@
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\bin\Debug\net6.0\SpiderManWorkout.exe
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\bin\Debug\net6.0\SpiderManWorkout.deps.json
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\bin\Debug\net6.0\SpiderManWorkout.runtimeconfig.json
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\bin\Debug\net6.0\SpiderManWorkout.dll
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\bin\Debug\net6.0\SpiderManWorkout.pdb
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\SpiderManWorkout.csproj.AssemblyReference.cache
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\SpiderManWorkout.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\SpiderManWorkout.AssemblyInfoInputs.cache
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\SpiderManWorkout.AssemblyInfo.cs
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\SpiderManWorkout.csproj.CoreCompileInputs.cache
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\SpiderManWorkout.dll
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\refint\SpiderManWorkout.dll
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\SpiderManWorkout.pdb
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\SpiderManWorkout.genruntimeconfig.cache
+C:\Users\Sam Henderson\source\repos\SpiderManWorkout\SpiderManWorkout\obj\Debug\net6.0\ref\SpiderManWorkout.dll

@@ -1,0 +1,17 @@
+{
+Start
+Him: "[FOCUS]You think? I got them custom made with a revamped A/C system and a killer speaker set just for nights like these."
+Him: "Installed new headlights because the old ones were tacky, but I like older stuff."
+-> Section 5
+}
+{
+Section 5
+Him: "Alright, here comes the food! I ordered us some pizza and poppers."
+Him: "It's kind of all they have here really, but it's honestly the best food you'll find in town."
+Him: "Reminds me of when I used to come here with some old friends of mine..."
+Him: "We used to hang out here in our 20s, watch the game and talk about whatever came to mind." 
+Him: "I wasn't into sports really, but it was just nice to be around people, y'know?"
+Him: "You should always have someone to hold your hair back when going to a bar after all."
+Him: "Never know when you'll be blackout drunk spillin' your guts out in a stall." 
+Him: "Anyways, I got a hawaiian pizza with a side of ranch for dipping, hope that's okay?"
+}

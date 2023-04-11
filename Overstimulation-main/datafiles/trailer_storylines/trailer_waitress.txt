@@ -1,0 +1,14 @@
+{
+Start
+Him: "It's kinda hard to decide, I know."
+Him: "There's lots to choose from though, that's for sure..."
+-> Section 3
+}
+{
+Section 3
+Him: "[DATE_JUMP]Oh, Looks like our drinks are here..."
+Waitress: [WAITRESS_ENTER_BLOCK]"I've got two drinks coming right up!"
+Waitress: "First round is on the house, good lookin' folk like this young fellow sitting across from you actually deserve it after all..."
+Waitress: [SKIP_PAUSE]"Who's this one? Weren't you in here last week wit-"
+Him: "[INCREMENT_SPEED(2), DATE_JUMP]H-Hey now, let's not go into that [DATE_JUMP]old [DATE_JUMP]friend...[DECREMENT_SPEED(2)]"
+}

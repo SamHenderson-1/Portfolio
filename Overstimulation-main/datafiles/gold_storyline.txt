@@ -1,0 +1,651 @@
+{
+Start
+[CREATE_PROPERTY(Happy, 0), CREATE_PROPERTY(Mad, 0), CREATE_PROPERTY(Confused, 0), CREATE_PROPERTY(Disinterested, 0)]
+
+[FADE_FILL(), MUSIC_STOP]I[SET_SPEED(1)]t's been a while since you've been on a date.
+
+In fact, you can't remember the last time you went on one.
+
+You met this guy on some dating app though, and things went okay. 
+
+You were kind of unsure at first if signing up for it was a good idea in the first place...
+
+But after talking to a few guys on there, one stuck with you. 
+
+He seemed like an outgoing guy from his profile pictures, so you talked for a minute.
+
+This man was a little verbose, though at times it seemed a little cheesy and thoughtless. 
+
+Nonetheless, you agreed to meet up with him after a few days of texting back and forth.
+
+He, of course, picked out the shadiest looking dive bar you'd ever seen when you looked it up.
+
+He insisted that the reviews were written by drunks who got kicked out of the bar. 
+
+You had kind of a hard time believing him on that one, but at least it would be a fun time, right?
+
+Suppose the only thing you could do was find out. The spice of life was trying after all.
+
+He picked you up that night in a fancy looking car. You could have sworn you recognized the model...
+
+The seats were clearly custom made, and the overhead of the car was fixed in place nicely.
+
+You two drove down the street, making slightly awkward small talk as you went. 
+
+As unbearable as these moments tend to be, at least you got a sense of what he's like before the date. 
+
+He insisted on keeping the windows halfway down, even though the sound kind of bothered you.
+
+Something about the wind feeling good against his face. Can't argue with that I guess. 
+
+Walking into the bar, the lights are low in the evening slump as few customers line the empty stalls and stools. 
+
+You both find a booth sitting down in the slightly cushy seats as you take a look at the menus.
+
+Some odd orders here, but a plentiful assortment of appetizers. It'll do for a quick grub.
+
+Looking up at the date, he's beaming with the social poise of a local. 
+
+You even saw him greet the few remaining customers and staff beforehand. 
+
+He's been here many times. You can just tell.[SET_SPEED(0), FADE_IN_BLOCK(), MUSIC_START()]
+
+Him: "[DATE_JUMP]So isn't it just the best here? [DATE_JUMP]Y'know, I always come to this place with people I really like."
+Him: "[DATE_JUMP]It's an atmosphere you can't find in any other bar. I don't know how to describe it..."
+Him: "[DATE_JUMP]Y'know what, why don't you do it for me? [DATE_JUMP]Whaddya think of this place?"
+RESPONSES
+"I think it's great! Love the 80's dive bar aesthetic." -> Great
+"The band is kind of loud." -> Loud
+"I think I'll get the breadsticks." -> Breadsticks
+"Hmm... I don't know." -> Hmm
+}
+{
+Great
+Him: "[DATE_JUMP, SOUND(shocked)]Wow, you noticed that? A man of good taste is one after my own heart. That's for sure.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 2
+}
+{
+Loud
+Him: "Oh, yeah I guess, I'm a big fan of the talent here so I'll agree to disagree there.[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 2
+}
+{
+Breadsticks
+Him: "[DATE_JUMP]Huh?"
+Him: "Okay...? I think I'll get us a round of drinks then, [DATE_JUMP]sound good?[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 2
+}
+{
+Hmm
+Him: "...oh, you look sorta lost in thought."
+Him: ...
+Him: "Guess it's a lot to take in, huh. Are you nervous? No need to be shy 'round these parts.[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 2
+}
+{
+Section 2
+Him: "[HYPERFIX(3)][DATE_JUMP]Well anyways, I'm interested in what you're about."
+Him: "[DATE_JUMP]Do you have a favorite drink? 
+Him: "You more of a [DATE_JUMP]fancy glass or a [DATE_JUMP]rough tankard kind of guy?"
+Him: "[DATE_JUMP]Me? I'm more of a whiskey on the rocks with a splash of coke."
+Him: "[DATE_JUMP]It's basic I know, but it helps it go down easier. I'll order whatever you want to get though."
+RESPONSES
+"What about ginger beer with some lime instead?" -> Ginger
+"I'll just have some water." -> Water
+"I love rocks, I've got a huge collection back at home!" -> HyperfixationRocks
+"I'm not sure..." -> Unsure
+}
+{
+HyperfixationRocks
+You: "[HYPERFIX(2, 0.4)][INCREMENT_SPEED]Oh, I must have got ice confused with diamonds. Haha, sorry. You know, there's a lot of cultural and scientific significance to diamonds."
+RESPONSES
+Stop -> Rocks
+Talk about Rocks -> HyperfixationRocks2
+}
+{
+HyperfixationRocks2
+You: "[HYPERFIX(2, 0.6)][INCREMENT_SPEED]They're widely regarded as a gemstone that symbolizes immortality, mostly due to their resilient nature."
+You: "According to Indian spiritual practices, they are also considered a gift from the gods and referred to as the philosopher's stone."
+RESPONSES
+Stop -> Rocks
+Diamonds are your favorite gemstone, keep talking -> HyperfixationRocks4
+}
+{
+HyperfixationRocks4
+You: "[HYPERFIX(2, 0.8)][INCREMENT_SPEED]This is the main reason why diamond rings are used in marriages, they are also a symbol of love and strong bonds between people."
+You: "[INCREMENT_SPEED]In fact, the word diamond itself is derived from Adamas, the Greek work for unconquerable." 
+RESPONSES
+Stop -> Rocks
+Context is important -> HyperfixationRocks6
+}
+{
+HyperfixationRocks6
+You: "[INCREMENT_SPEED]That connection between cultures is just amazing, don't you think?"
+You: "Many fantasy settings like marvel or DND use a material called Adamantine or Adamantium, which also means unbreakable."
+You: "[INCREMENT_SPEED]In fact, the Greek name for diamond itself is Adamantinos, cool right? It's just so fascinating how many fantasy settings have origins in real ancient history![SET_SPEED(0)]"
+RESPONSES
+Stop -> Rocks
+-> Rocks
+}
+{
+Ginger
+Him: "[DATE_JUMP, SOUND(shocked)]Wow, I'm impressed."
+Him: "[DATE_JUMP]That's a great choice, you really know your stuff when it comes to alcohol.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 3
+}
+{
+Water
+Him: "Alright, I mean that's more vanilla than actual vanilla but you do you man.[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 3
+}
+{
+Rocks
+Him: "Oh... well that's something."
+Him: "Rocks aren't really my favorite, [DATE_JUMP]crystals and gems are kinda cool though."
+Him: "I've got a friend that's really into that kinda stuff, I just pick the ones that a guy might like as a gift or something.[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 3
+}
+{
+Unsure
+Him: "It's kinda hard to decide, I know."
+Him: "There's lots to choose from though, that's for sure...[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 3
+}
+{
+Section 3
+Him: "[DATE_JUMP, FOCUS()]Oh, Looks like our drinks are here...[WAITRESS_ENTER]"
+Waitress: "I've got two drinks coming right up!"
+Waitress: "First round is on the house, good lookin' folk like this young fellow sitting across from you actually deserve it after all..."
+Waitress: "Who's this one? Weren't you in here last week wit-"
+Him: "[INCREMENT_SPEED(2), DATE_JUMP, SOUND(shocked)]H-Hey now, let's not go into that [DATE_JUMP]old [DATE_JUMP]friend...[DECREMENT_SPEED(2)]"
+Waitress: "Who're you callin' old huh?" 
+Waitress: "I pulled more men last week than you have in the past month and I work a full time job. Beats you at least, drunk fool."
+Him: "[DATE_JUMP]Quality over [DATE_JUMP]quantity."
+Him: "I may be a man of the town but you know I can [DATE_JUMP]afford to pick carefully."
+Him: "This guy's an absolute charmer and you can't deny that. [DATE_JUMP, END_FOCUS]Whaddya think, am I right?"
+RESPONSES
+"I mean, you are kind of haggard, and you definitely drink like an old sailor..." -> Sailor
+"I mean it's not really like either of you should be bragging about all that anyways. People aren't just objects in your little games, you know." -> Serious
+"I don't feel like I pulled anything. My legs are fine." -> Legs
+"I mean..." -> Mean
+}
+{
+Sailor
+Him: "Haah, So I'm a pirate now? I kind of like that image... 
+Him: "It's quite fitting for my acquired taste and rugged physique. Thanks for the compliment.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 4
+}
+{
+Serious
+Him: "....No need to be so serious man, I was just pulling your leg.[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 4
+}
+{
+Legs
+Him: "Oh... That's good...? I feel like I'm missing a joke here...[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 4
+}
+{
+Mean
+Him: "...Well your silence speaks volumes, I'm clearly right.[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 4
+}
+{
+Section 4
+Waitress: "[FOCUS]Ugh, y'know you could stand to lose some of that cockiness, hun. It'd serve you well when talking to a lady, that's for sure..."
+Him: "Haah, it was always like you to undermine my greatest features... 
+Him: "Well, I'm sure you've got other customers to bother, don't-cha? It was nice introducing you two though."
+Waitress: "Well take care now you... I'm serious about that! 
+Waitress: "No more late nights, and don't drink yourself into a coma. I don't want to see it on our tab here."
+Him: "Okay... I won't, I promise. I'm 30 somethin' now y'know, don't go treating me like a kid.[WAITRESS_EXIT_BLOCK]"
+Him: "[HYPERFIX(2), END_FOCUS()]Anyways, how'd you like my ride tonight?" 
+Him: "[INCREMENT_SPEED]It's the oldest model, a 1980 Cadillac Coupe De Ville in pretty good condition if you ask me.[DECREMENT_SPEED]"
+RESPONSES
+"Yeah, the leather seats were comfy. Surprisingly no stains either." -> Comfy
+"The... convertible? Yeah it was nice, I always wanted one myself." -> Convertible
+"A ride? I mean something like that hasn't happened yet..." -> Flirtatious
+"Right... Yeah!" -> Right
+}
+{
+Comfy
+Him: "You think? I got them custom made with a revamped A/C system and a killer speaker set just for nights like these."
+Him: "Installed new headlights because the old ones were tacky, but I like older stuff.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 5
+}
+{
+Convertible
+Him: "Huh? What do you mean 'convertible'? Okay, there are some great convertible models out there, but this is not one of them."
+Him: "Could you not tell? Thought you had some taste...[INCREMENT_PROPERTY(*Mad, 1)]"
+-> HyperfixationCars
+}
+{
+Flirtatious
+Him: "Wait what? Oh, I see what you did there... I think? Seems like I'm missing a lot of jokes tonight for some reason.[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 5
+}
+{
+Right
+Him: Are you... even paying attention? I think you might've missed my question or something...[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 5
+}
+{
+HyperfixationCars
+You: "[HYPERFIX(2, 0.4)][INCREMENT_SPEED]Oh, I must have mistaken the model you said for the 1982 Cadillac Coupe Le Cabriolet! My bad."
+RESPONSES
+Stop -> CarsResponse
+Talk about the 1982 Cadillac Coupe Le Cabriolet -> HyperfixationCars2
+}
+{
+HyperfixationCars2
+You: "[HYPERFIX(2, 0.6)][INCREMENT_SPEED]It's an incredible model for its time, a luxury car with a convertible top that almost looks identical to the one you've got out back otherwise."
+You: "It's a lowrider, and people who show them at car shows typically have to do quite a lot of work to fix them up."
+RESPONSES
+Stop -> CarsResponse
+Car shows are your favorite! -> HyperfixationCars3
+}
+{
+HyperfixationCars3
+You: "[HYPERFIX(2, 0.8)][INCREMENT_SPEED]They are very rare to find, especially in any kind of good condition. Which makes them all the more fun to see in their full glory!"  
+You: "Usually, many parts have to be replaced and rebuilt, and the entire car repainted as well."
+RESPONSES
+Stop -> CarsResponse
+-> HyperfixationCars5
+}
+{
+HyperfixationCars5
+You: "[INCREMENT_SPEED]It's cool to see how hard people work on these cars, they put months of effort into cleaning them up and the result is always amazing!"
+You: "[INCREMENT_SPEED]We should definitely go to a car show sometime, I'd love to hear your opinion on other cars from the 80's![SET_SPEED(0)]"
+RESPONSES
+Stop -> CarsResponse
+-> CarsResponse
+}
+{
+CarsResponse
+Him: "Wow, I'm... impressed by your knowledge of cars from the golden age."
+Him: "Y'know, maybe we should go to one of those car shows sometime, maybe I'll even let you drive the puppy outside."
+Him: "Okay, back to the menu..."
+-> Section 5
+}
+{
+Section 5
+Him: "Alright, here comes the food! I ordered us some pizza and poppers."
+Him: "It's kind of all they have here really, but it's honestly the best food you'll find in town."
+Him: "[FOCUS()]Reminds me of when I used to come here with some old friends of mine..."
+Him: "We used to hang out here in our 20s, watch the game and talk about whatever came to mind." 
+Him: "I wasn't into sports really, but it was just nice to be around people, y'know?"
+Him: "You should always have someone to hold your hair back when going to a bar after all."
+Him: "Never know when you'll be blackout drunk spillin' your guts out in a stall." 
+Him: "Anyways, I get hawaiian with a side of ranch for dipping, hope that's okay?"
+RESPONSES
+"Can I dip my poppers in the ranch too?" -> Ranch
+"Hawaiian? Pineapple on pizza tastes like spilling my guts out on the floor..." -> Picky
+"Poppers...? Like the dru-" -> Poppers
+"Oh.. Yeah, that's fine." -> Fine
+}
+{
+Ranch
+Him: "Ooh, adventurous. Always have loved experimental eaters! 
+Him: "People who get super particular about their food choices bother me sometimes."
+Him: "Eat what's in front of you, even if you end up not likin' it. 
+Him: "You might end up regretting it later when you don't have something to eat...[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 6
+}
+{
+Picky
+Him: "I see. You don't like Hawaiian?" 
+Him: That's fine, I'll just go tell 'em to bring it back then. No use in eating alone, is there?[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 6
+}
+{
+Poppers
+Him: "Huh? Oh, nope. Not like that."
+Him: "Funny though, I've never actually tried that kind before.[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 6
+}
+{
+Fine
+Him: "Okay...? Did you want something else? You don't sound very enthused to me.[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 6
+}
+{
+Section 6
+Him: "Man, this is the good stuff. Lemme tell ya, this place really never gets old. [DATE_JUMP]"
+Him: "The band playing in the background reminds me of home..."
+Him: "Y'know, I've lived in this area for a long time. Met plenty of guys, gone plenty of places."
+Him: "The one thing I miss is family, I guess that's probably why I come here so often."
+Him: [INCREMENT_SPEED]"There's something special about 'em, ya get me?"
+Him: "Haven't seen 'em in a long while, they're all busy in the city working way too hard..."
+Him: [INCREMENT_SPEED]"Meanwhile, I'm just here to get away from all that. I guess I'm just a lovesick drunk, but that doesn't mean I wasn't trying before, y'know?"
+Him: "[HYPERFIX(3), END_FOCUS()]Now it's just... different. I don't like it in that world, it's fulla' bloodthirsty sharks."
+Him: "They won't just settle, and I won't go back there. So here we are."
+Him: Anyways, what do you think about the food? Any good?
+RESPONSES
+"Yeah, I've always liked sharing instead of splitting meals up." -> Appetizers
+"Don't try to change the subject, you should be working hard too."-> Subject
+"Sharks? You know, sharks are actually repelled by magnets, and they rarely actually attack humans." -> HyperfixationSharks
+"Huh... Sorry, what did you say?" -> Sorry
+}
+{
+HyperfixationSharks
+You: "[HYPERFIX(2, 0.4)][INCREMENT_SPEED]In fact, Sharks have sensory pores on their heads called elasmobranchs that allow them to sense electrical currents in the microvolt range."
+RESPONSES
+Stop -> Sharks
+Muscle contractions, fascinating! -> HyperfixationSharks2
+}
+{
+HyperfixationSharks2
+You: "[HYPERFIX(2, 0.5)][INCREMENT_SPEED]This is mainly used to detect electric signals that emit from the muscle contractions of their prey."
+You: "Manmade magnetic fields confuse this sense because they also use this feature of their bodies to sense the earth's magnetic field."
+RESPONSES
+Stop -> Sharks
+Magnets repelling sharks, crazy stuff. -> HyperfixationSharks4
+}
+{
+HyperfixationSharks4
+You: "[HYPERFIX(2, 0.6)][INCREMENT_SPEED]This has a negative consequence for sharks, because the electric waves the magnets are creating overwhelm the elasmobranch's acute electrosensory system."
+You: "At long range, sharks use something called chemoreception to detect prey."
+RESPONSES
+Stop -> Sharks
+Organs that detect electrical signals, amazing! -> HyperfixationSharks6
+}
+{
+HyperfixationSharks6
+You: "[HYPERFIX(2, 0.7)][INCREMENT_SPEED]But at close range, their elasmobranchs use an electrosensory system." 
+You: "This is channeled through the ampullae of Lorenzini in order to detect the prey's movements."
+RESPONSES
+Stop -> Sharks
+A twist in the story? -> HyperfixationSharks8
+}
+{
+HyperfixationSharks8
+You: "[HYPERFIX(2, 0.8)][INCREMENT_SPEED]Interestingly enough, there are several species of pelagic or open sea sharks that are actually attracted to these magnetic waves instead of repelled."
+You: "Blue sharks and shortfin makos are two very good examples of this, and it's why this is a hot button issue for fishers across the world."
+RESPONSES
+Stop -> Sharks
+Adaptation of fishers around the world! -> HyperfixationSharks10
+}
+{
+HyperfixationSharks10
+You: "[INCREMENT_SPEED]Fishers have started using these magnets for the purpose of shooing off sharks because they get into their nets and pose a danger to both their cargo and themselves."
+You: "But because some are attracted rather than repelled, it depends regionally on what kinds of sharks are causing you problems.[SET_SPEED(0)]" 
+RESPONSES
+Stop -> Sharks
+-> Sharks
+}
+{
+Appetizers
+Him: "You know, that's exactly what I think! [DATE_JUMP]"
+Him: "Individual meals are so overrated anyways when you can just have separate plates, and appetizers are just the right size for sharing.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 7
+}
+{
+Subject
+Him: "[DATE_JUMP]Hey hey hey, woah there. I don't know if I like someone tellin' me what to do, that's kinda rude dontcha think?"
+Him: "Let's just eat, I shouldn't've brought it up in the first place...[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 7
+}
+{
+Sharks
+Him: "Oh, that's kinda interesting. You know a lotta stuff huh? Guess I don't feel the same is all.[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 7
+}
+{
+Sorry
+Him: "Oh, it was nothing, no worries...
+Him: "Anyways, you seem to like the poppers at least.[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 7
+}
+{
+Section 7
+You: "Hey, can I go to the bathroom real quick? I uh... really gotta go."
+Him: "Oh, yeah. Don't be long though! The bill hasn't come yet, y'know..."
+You get up from the table, shifting awkwardly out of the booth before heading over to the bathrooms. 
+[FADE_OUT_BLOCK()]
+[MUSIC_STOP()]
+You walk in, and it's empty. Thank god. 
+You quickly enter one of the stalls and take a seat, locking the bathroom door for safety. 
+Taking a deep breath, you take a look down at your phone and check for any new messages.
+Nothing of note, the first texts you see are understandably his and yours.
+It's been so hard to focus... You needed a minute to regroup. 
+....
+...
+-> Bathroom
+}
+{
+Bathroom
+
+[SOUND_BLOCK(b_knock)]Him: "Hey, is everything alright in there?"
+Him: "Y'know, I like to take care of my dates. I just wanna make sure you're okay."
+[SOUND_BLOCK(b_knock)]Him: "Are you... even there? Why aren't ya answering me?"
+Him: "Wait, I hear breathing so I know you're in here. Why are you... breathing so heavily?"
+Him: "There's a window in there, I know because guys have slipped out like this before."
+[SOUND_BLOCK(b_knock)]Him: "Are you leaving?"
+Him: "W-was it my hair?"
+Him: "No no no I'm sure I combed it before..."
+Him: "The way I smell?"
+Him: "I took a shower and put deodorant with cologne on."
+[SOUND_BLOCK(b_knock)]Him: "...Am I too overbearing?"
+Him: "Oh god, did I scare you off with that story about my family?"
+Him: "I mean, maybe it's weird to get so personal with a guy on the first date like that."
+Him: "But it came up kinda naturally so I figured it'd be okay..."
+[SOUND_BLOCK(b_knock)]Him: "Are you just nervous?"
+Him: "Is something wrong? Did ya get hurt?"
+Him: "Was it food poisoning?"
+Him: "That wouldn't happen, right? Not here at least."
+[SOUND_BLOCK(b_knock)]Him: "Why aren't you saying anything!?"
+Him: "J-just open the stall! I'll break it down if I have to!"
+[SOUND_BLOCK(b_slam)]Him: "Ack- God I'm old, my fist got wrecked from hittin' the stall door too hard."
+[SOUND_BLOCK(b_knock)]Him: "I can't even feel it, so I guess it doesn't matter anyways."
+[SOUND_BLOCK(b_knock)]Him: "..."
+Him: "I..."
+[SOUND_BLOCK(b_knock)]Him: "I just don't want to be left behind again..."
+[SOUND(b_slam)]Him: "LET ME IN!"
+Him: "Ugh... man you're one stubborn guy. I'm drunk, tired, and alone."
+Him: "And ya wanna know what the worst part is?"
+Him: "You'll probably climb out the window for real now."
+Him: "This time, it'll actually be my fault."
+Him: "All because I'm a loser who can't take it when someone isn't into me anymore..."
+Him: "I think about what went wrong, and it always backfires."
+Him: "I can't get my own head on straight because I'm too drunk."
+Him: "And now I'm sittin' on the bathroom floor, back to the wall against the stall with my date inside."
+Him: "All because I can't help but be selfish."
+Him: "You're supposed to be the guest here, not me."
+Him: "I spent the whole night lookin' for attention from everyone else instead of the person that mattered."
+Him: "..."
+Him: "Maybe I'm the one who should leave after all."
+
+
+RESPONSES
+No, don't go. Let's talk about this. -> Stay
+Sorry, I think I have to go...-> Leave
+Wash your hands first, gross. -> Gross
+... -> Silence
+}
+
+{
+Stay
+
+Him: "Okay... I guess I'll just... stay outside?"
+Him: "..."
+Him: "So, what is it that's bothering you?"
+You: "Well, sometimes when things get too loud, all my energy gets drained."
+Him: "Whaddya mean? Like it's too loud here for you?"
+Him: "I'm sorry. If I woulda known, we'd have gone somewhere else."
+You: "It's okay... Actually I'm used to it being like this."
+You: "I can't be around people for very long, it really drains my energy more than usual."
+You: "...So I use the bathroom as an excuse to sit and calm down for a minute. Sounds silly, I know. But it works."
+Him: "Huh, okay. Why does it affect you so much?"
+You: "Umm... you promise not to judge me right? It's kind of hard to talk about it sometimes."
+Him: "Uh, well sure. Doesn't seem to be a problem with me, now what is it?"
+You: "I'm a diagnosed autistic person. I guess it's kind of hard to tell if you're not focused on it."
+Him: "Autistic... I don't think I've dated a guy like that before, but it doesn't really change how I look at you."
+You: "Oh, I'm glad. I know you were probably confused by what I was saying sometimes..."
+You: "It's really hard to keep up with conversations in busy places, get what I mean?"
+Him: "I would imagine..." 
+Him: "Man I was so wrapped up in feelin' bad for myself that I didn't consider for even a second how you might've felt."
+Him: "I guess that's me for ya, I'm kind of selfish sometimes.
+Him: "I do think you're still one of the cutest guys I've seen in a while though. And I've had worse dates."
+Him: "Want a ride home? And maybe after, we can have a second date in a much quieter, safer place for you?"
+You: You know what? That sounds great to me. Let's do it."[INCREMENT_PROPERTY(*Happy, 2)]
+-> Tiebreaker
+}
+
+{
+Leave
+
+You exit through the window quietly, heading out into the otherwise empty alleyway outside of the bar. 
+It's cold, and dark. But at least you're gone. 
+You: "I'd rather walk home than get yelled at by a martyr with a drinking problem."
+You: "I can find someone who will treat me right, and I hope he learns how to not talk to people like his therapist."
+You: "He probably didn't really even understand how much that affected me." 
+You: "He doesn't seem to think outside his narrow view point anyways so he'd never really get it."
+You: "Being well adjusted is hard enough without someone causing emotional carnage, too much baggage for me."
+You leave the alleyway, heading home alone like you have many times before.[INCREMENT_PROPERTY(*Mad, 2)]
+-> Tiebreaker
+}
+{
+Gross
+Him: "What? What are you even saying right now?"
+You: "Did you bother to wash your hands before knocking on my stall? 
+You: "...I don't know, you seemed stressed so I figured a joke would lighten the mood a bit."
+Him: "Heh, a joke... is this funny to you?!"
+You: "I mean does a man screaming at a door for 5 minutes straight not sound funny? I guess it does to me at least."
+Him: "I just don't get you. All this time, you've been cracking jokes left and right that I never get."
+Him: "But the thing is, some of them didn't even feel like jokes?
+Him: "It's almost like you're socially tone deaf or something."
+You: "I guess that's normal to think... I'm kinda used to being treated that way."
+Him: "Oh. sorry for being rude then."
+Him: "...I don't know how you're feeling, but I don't think we've gotten much of anything out of this date."
+Him: "I guess there's always next time? 
+Him: "Maybe we could try again sometime and really get to know each other better?"
+You: "I mean, maybe? I'm kind of busy though. 
+You: "I work all week, and it's hard for me to break routine."
+Him: "That's kinda hard to work with, man."
+Him: "I can't really see how you wouldn't have time at least when you get off work."
+You: "It's... kind of hard to explain really. Maybe I should just spare you the details."
+Him: "Yeah, it's probably for the best."
+You: "So, text me when you're free next and maybe I'll respond?"
+Him: "Sure, sounds good I guess? I'm not really looking for a flake though."
+You: "Don't worry, if I have time, I'll let you know."
+Him: "Okay... So, should I just leave now?"
+You: "Yeah, probably. Did you pay already?"
+Him: "Yup."
+You: "Okay then. I guess I'll see you maybe?"
+Him: "Yeah alright, see you. Hopefully."
+[INCREMENT_PROPERTY(*Confused, 2)]
+-> Tiebreaker
+}
+{
+Silence
+Him: "..."
+Him: "Maybe he already left while I was talking?"
+Him: "Guess it doesn't matter. I can't believe I'm acting this way over a guy I met today."
+Him: "Maybe he wasn't all I cracked him up to be at the end of the day."
+Him: "He hardly seemed interested, it kinda went beyond just getting distracted from what I saw." 
+Him: "Guess I'll just leave then. No point in staying if he's just givin' me the silent treatment anyways."
+Him: "If you're still in there... Good luck out there man."[INCREMENT_PROPERTY(*Disinterested, 2)]
+->Tiebreaker
+}
+{
+Tiebreaker
+
+[MAX(Happy,Confused,Disinterested,Mad)]
+(max_tie and 1) -> Tiebreaker1
+(max_result == Happy) -> HappyEnding
+(max_result == Confused) -> ConfusedEnding
+(max_result == Disinterested) -> DisinterestedEnding
+(max_result == Mad) -> MadEnding
+-> Ending
+}
+{
+Tiebreaker1
+Him: "[SET_SPEED(0)]Hey. So, it's almost time to go, but I got a question for ya before we leave."
+Him: "How do you feel about me? Honestly? 
+Him: "I can't really get a read on what you're thinking about right now, but what I can do is ask you."
+Him: "I'm a pretty... Lonely person. I guess I've been on lots of dates, but all to no avail."
+Him: "Normally, I get a pretty good grip on how someone's feeling by the end of a date, but I just can't seem to pin you down."
+RESPONSES
+"I'm not sure, but I enjoyed my time!" -> TiebreakerUnsure
+"You've been kind of overbearing, it's getting on my nerves." ->TiebreakerRealization
+"Pin me down? I mean-" ->TiebreakerPinning
+"Oh, hmm..." -> TiebreakerHmm
+}
+{
+TiebreakerUnsure
+[INCREMENT_PROPERTY(*Happy, 1)]
+-> Ending
+}
+{
+TiebreakerRealization
+[INCREMENT_PROPERTY(*Mad, 1)]
+-> Ending
+}
+{
+TiebreakerPinning
+[INCREMENT_PROPERTY(*Confused, 1)]
+-> Ending
+}
+{
+TiebreakerHmm
+[INCREMENT_PROPERTY(*Disinterested, 1)]" 
+-> Ending
+}
+{
+Ending
+[MAX(Happy,Confused,Disinterested,Mad)]
+(max_tie and 1) -> Tiebreaker1
+(max_result == Happy) -> HappyEnding
+(max_result == Confused) -> ConfusedEnding
+(max_result == Disinterested) -> DisinterestedEnding
+(max_result == Mad) -> MadEnding
+}
+{
+HappyEnding
+[SOUND_BLOCK(phone)]
+You have one new voicemail from: Him
+Him: "Hey, it's me.."
+Him: "[SET_SPEED(0)] Thanks for everything by the way, you were great company last night, y'know."
+Him: "I guess it's kinda weird to ask so soon, but do you wanna hang out again?"
+Him: "I mean, you're my type of guy. Maybe we can work something out together."
+Him: "I'll warn ya though, I'm pretty unstable..."
+Him: "But it's been a while since I've met a guy like you. You're... different somehow."
+Him: "I know I come off as a bit of a jerk, but I promise I'll take good care of ya if you let me."
+Him: "Well let me know, I'll be around next Tuesday if you're down to come to my place then."
+}
+{
+MadEnding
+[SOUND_BLOCK(phone)]
+You have one new voicemail from: Him
+Him: "[SET_SPEED(0)]...Alright. Clearly, something's up with you. Why were you acting like you were irritated by me last night?"
+Him: "It's clear by what you've said that you don't care, so why bother?!"
+Him: "You want me to get better, but I can't see how your advice holds any weight when you act like that on a first date."
+Him: "Y'know what? I'm done with this. I pay for your food, and you're rude the whole time. Really?"
+Him: "Do you know how much that cost me?! What a waste."
+Him: "My patience has worn thin, and I'm not gonna take it from some brat who's livin' in some high-class apartment uptown."
+Him: "Get lost! Lose my number, I'm finished with you! You hear me, don't call back ya snarky loser!"
+}
+{
+ConfusedEnding
+[SOUND_BLOCK(phone)]
+You have one new voicemail from: Him
+Him: "[SET_SPEED(0)]Man, that was... Thanks for the date, I guess?"
+Him: "You're a funny guy, that's for sure."
+Him: "Haah, loved all the jokes." 
+Him: "Not a lot of guys have such a... unique sense of humor."
+Him: "..."
+Him: "I- uh... I'll call you."
+}
+{
+DisinterestedEnding
+...
+No new messages show up on your phone from the date. 
+Seems like he lost interest in you after all. 
+Maybe it was a good thing, maybe not. 
+It still kind of bothered you that you didnt know exactly why he started ghosting you afterwards.
+If he had a problem, why couldn't he have just brought it up?
+Didn't you at least deserve a second chance?
+...Whatever. Time to find another guy on that dating app and try again. Or maybe not. 
+Love felt so far out of your grasp, might as well just give it up. 
+}
+
+

@@ -1,0 +1,15 @@
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\bin\Release\net6.0\ArraySearch.exe
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\bin\Release\net6.0\ArraySearch.deps.json
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\bin\Release\net6.0\ArraySearch.runtimeconfig.json
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\bin\Release\net6.0\ArraySearch.dll
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\bin\Release\net6.0\ArraySearch.pdb
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ArraySearch.csproj.AssemblyReference.cache
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ArraySearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ArraySearch.AssemblyInfoInputs.cache
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ArraySearch.AssemblyInfo.cs
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ArraySearch.csproj.CoreCompileInputs.cache
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ArraySearch.dll
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\refint\ArraySearch.dll
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ArraySearch.pdb
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ArraySearch.genruntimeconfig.cache
+C:\Users\Sam Henderson\source\4150-Repos\ArraySearch\obj\Release\net6.0\ref\ArraySearch.dll

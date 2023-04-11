@@ -1,0 +1,17 @@
+{
+Start
+[CREATE_PROPERTY(loop,0)]
+Hi, I'm a loop!
+-> Loop
+}
+{
+Loop
+[INCREMENT_PROPERTY(*loop), INCREMENT_SPEED(2)]Looping...
+(loop < 3) -> Loop
+-> End
+}
+{
+End
+I'm bored.
+I'm done looping.
+}

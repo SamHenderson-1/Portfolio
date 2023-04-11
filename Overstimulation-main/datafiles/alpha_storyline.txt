@@ -1,0 +1,319 @@
+{
+Start
+[CREATE_PROPERTY(Happy, 0), CREATE_PROPERTY(Mad, 0), CREATE_PROPERTY(Confused, 0), CREATE_PROPERTY(Disinterested, 0)]
+
+
+Him: "[DATE_JUMP]So... isn't it just the best here? [DATE_JUMP]Y'know, I always save this place for people I really like."
+Him: "[DATE_JUMP]It's an atmosphere you can't find in any other place. I don't know how to describe it..."
+Him: "[DATE_JUMP]Why don't you do it for me? [DATE_JUMP]Whaddya think of this place?"
+RESPONSES
+"I think it's great! Love the 80's dive bar aesthetic." -> Great
+"The band is kind of loud." -> Loud
+"I think I'll get the breadsticks." -> Breadsticks
+"Hmm... I don't know." -> Hmm
+}
+{
+Great
+Him: "[FOCUS][DATE_JUMP]Wow, you noticed that? A man of good taste is one I can get along with.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 2
+}
+{
+Loud
+Him: "[FOCUS]Oh, yeah I guess, I'm a big fan of that kinda thing so I'll have to agree to disagree there.[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 2
+}
+{
+Breadsticks
+Him: "[FOCUS][DATE_JUMP]Huh?"
+Him: "Okay... I think I'll get us a round of drinks, [DATE_JUMP]sound good?[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 2
+}
+{
+Hmm
+Him: "[FOCUS]...oh, you look sorta lost in thought."
+Him: ...
+Him: "Guess it's a lot to take in, huh.[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 2
+}
+{
+Section 2
+Him: "[DATE_JUMP]Well anyways, I'm interested in what you're about."
+Him: "[DATE_JUMP]Do you have a favorite drink? 
+Him: "You more of a [DATE_JUMP]fancy glass or a [DATE_JUMP]rough tankard kind of guy?"
+Him: "[DATE_JUMP]Me? I'm more of a whiskey on the rocks with a splash of coke. 
+Him: "[DATE_JUMP]Basic, but it helps it go down easier. But I'll order whatever you want to get."
+[END_FOCUS]
+RESPONSES
+"What about ginger beer with some lime instead?" -> Ginger
+"I just like water." -> Water
+"I love rocks, I've got a huge collection back at home!" -> Rocks
+"I'm not sure..." -> Unsure
+}
+{
+Ginger
+Him: "[FOCUS][DATE_JUMP]Wow, I'm impressed."
+Him: "[DATE_JUMP]That's a great choice, you really know your stuff when it comes to alcohol.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 3
+}
+{
+Water
+Him: "[FOCUS]Alright, I mean that's more vanilla than actual vanilla but you do you man.[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 3
+}
+{
+Rocks
+Him: "[FOCUS]Oh... well that's something."
+Him: "Rocks aren't really my favorite, [DATE_JUMP]crystals and gems are kinda cool though."
+Him: "I've got a friend that's really into that kinda stuff, I just pick the ones that a guy might like. [INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 3
+}
+{
+Unsure
+Him: "[FOCUS]It's kinda hard to decide, I know."
+Him: "There's lots to choose from though, that's for sure...[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 3
+}
+{
+Section 3
+Him: "[DATE_JUMP]Oh, Looks like our drinks are here..."
+Waitress: "I've got two drinks coming right up!"
+Waitress: "First round is on the house, good lookin' folk like this young fellow sitting across from you actually deserve it after all..."
+Waitress: "Who's this one? Weren't you in here last week wit-"
+Him: "[INCREMENT_SPEED(2), DATE_JUMP]H-Hey now, let's not go into that [DATE_JUMP]old [DATE_JUMP]friend...[DECREMENT_SPEED(2)]"
+Waitress: "Who're you callin' old huh? I pulled more men last week than you have in the past month and I work a full time job. Beats you at least, drunk fool."
+Him: "[DATE_JUMP]Quality over [DATE_JUMP]quantity."
+Him: "I may be a man of the town but you know I can [DATE_JUMP]afford to pick carefully."
+Him: "This guy's an absolute charmer and you can't deny that. [DATE_JUMP]Whaddya think, am I right?"
+[END_FOCUS]
+RESPONSES
+"I mean, you are kind of haggard, and you definitely drink like an old sailor..." -> Sailor
+"I mean it's not really like either of you should be bragging about all that anyways. People aren't just objects in your little games, you know." -> Serious
+"I don't feel like I pulled anything. My legs are fine." -> Legs
+"I mean..." -> Mean
+}
+{
+Sailor
+Him: "[FOCUS]Haah, So I'm a pirate now? I kind of like that image... 
+Him: "It's quite fitting for my acquired taste and rugged physique. Thanks for the compliment.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 4
+}
+{
+Serious
+Him: "[FOCUS]....No need to be so serious man, I was just pulling your leg.[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 4
+}
+{
+Legs
+Him: "[FOCUS]Oh... That's good...? I feel like I'm missing a joke here...[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 4
+}
+{
+Mean
+Him: "[FOCUS]...Well your silence speaks volumes, I'm clearly right.[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 4
+}
+{
+Section 4
+Waitress: "Ugh, y'know you could stand to lose some of that cockiness, hun. It'd serve you well when talking to a lady, that's for sure..."
+Him: "Haah, it was always like you to undermine my greatest features... 
+Him: "Well, I'm sure you've got other customers to bother, don't-cha? It was nice introducing you two though."
+Waitress: "Well take care now you... I'm serious about that! 
+Waitress: "No more late nights, and don't drink yourself into a coma. I don't want to see it on our tab here."
+Him: "Okay... I won't, I promise. I'm 30 somethin' now y'know, don't go treating me like a kid.
+Him: "Anyways, how'd you like my ride tonight? 
+Him: "[INCREMENT_SPEED]It's the oldest model, a 1980 Cadillac Coupe De Ville in pretty good condition if you ask me.[DECREMENT_SPEED]"
+[END_FOCUS]
+RESPONSES
+"Yeah, the leather seats were comfy. Surprisingly no stains either." -> Comfy
+"The... convertible? Yeah it was nice, I always wanted one myself." -> Convertible
+"A ride? I mean something like that hasn't happened yet..." -> Flirtatious
+"Right... Yeah!" -> Right
+}
+{
+Comfy
+Him: "[FOCUS]You think? I got them custom made with a revamped A/C system and a killer speaker set just for nights like these."
+Him: "Installed new headlights because the old ones were tacky, but I like older stuff.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 5
+}
+{
+Convertible
+Him: "[FOCUS]Huh? What do you mean 'convertible'? Okay, there are some great convertible models out there, but this is not one of them."
+Him: "Could you not tell? Thought you had some taste...[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 5
+}
+{
+Flirtatious
+Him: "[FOCUS]Wait what? Oh, I see what you did there... I think? Seems like I'm missing a lot of jokes tonight for some reason.[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 5
+}
+{
+Right
+Him: "[FOCUS]Are you... even paying attention? I think you might've missed my question or something...[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 5
+}
+{
+Section 5
+Him: "Alright, here comes the food! I ordered us some pizza and poppers."
+Him: "It's kind of all they have here really, but it's honestly the best food you'll find in town."
+Him: "Reminds me of when I used to come here with some old friends of mine..."
+Him: "We used to hang out here in our 20s, watch the game and talk about whatever came to mind." 
+Him: "I wasn't into sports really, but it was just nice to be around people, y'know?"
+Him: "You should always have someone to hold your hair back when going to a bar after all."
+Him: "Never know when you'll be blackout drunk spillin' your guts out in a stall." 
+Him: "Anyways, I got a hawaiian pizza with a side of ranch for dipping, hope that's okay?"
+RESPONSES
+"Can I dip my poppers in the ranch too?" -> Ranch
+"Hawaiian? Pineapple on pizza tastes like spilling my guts out on the floor..." -> Picky
+"Poppers...? Like the dru-" -> Poppers
+"Oh.. Yeah, that's fine." -> Fine
+}
+{
+Ranch
+Him: "Ooh, adventurous. Always have loved experimental eaters! 
+Him: "People who get super particular about their food choices bother me sometimes."
+Him: "Eat what's in front of you, even if you end up not likin' it. 
+Him: "You might end up regretting it later when you don't have something to eat...[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 6
+}
+{
+Picky
+Him: "I see. You don't like Hawaiian?" 
+Him: That's fine, I'll just go tell 'em to bring it back then. No use in eating alone, is there?[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 6
+}
+{
+Poppers
+Him: "Huh? Oh, nope. Not like that."
+Him: "Funny though, I've never actually tried that kind before.[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 6
+}
+{
+Fine
+Him: "Okay...? Did you want something else? You don't sound very enthused to me.[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 6
+}
+{
+Section 6
+Him: "Man, this is the good stuff. Lemme tell ya, this place really never gets old. [DATE_JUMP]"
+Him: "The band playing in the background reminds me of home..."
+Him: "Y'know, I've lived in this area for a long time. Met plenty of guys, gone plenty of places."
+Him: "The one thing I miss is family, I guess that's probably why I come here so often."
+Him: [INCREMENT_SPEED]"There's something special about 'em, ya get me?"
+Him: "Haven't seen 'em in a long while, they're all busy in the city working way too hard..."
+Him: [INCREMENT_SPEED]"Meanwhile, I'm just here to get away from all that. I guess I'm just a lovesick drunk, but that doesn't mean I wasn't trying before, y'know?"
+Him: "Now it's just... different. I don't like it in that world, it's fulla' bloodthirsty sharks."
+Him: "They won't just settle, and I won't go back there. So here we are."
+Him: Anyways, what do you think about the food? Any good?
+RESPONSES
+"Yeah, I've always liked sharing instead of splitting meals up." -> Appetizers
+"Don't try to change the subject, you should be working hard too."-> Subject
+"Sharks? You know, sharks are actually repelled by magnets, and they rarely actually attack humans." -> Sharks
+"Huh... Sorry, what did you say?" -> Sorry
+}
+{
+Appetizers
+Him: "You know, that's exactly what I think! [DATE_JUMP]"
+Him: "Individual meals are so overrated anyways when you can just have separate plates, and appetizers are just the right size for sharing.[INCREMENT_PROPERTY(*Happy, 1)]"
+-> Section 7
+}
+{
+Subject
+Him: "[DATE_JUMP]Hey hey hey, woah there. I don't know if I like someone tellin' me what to do, that's kinda rude dontcha think?"
+Him: "Let's just eat, I shouldn't've brought it up in the first place...[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Section 7
+}
+{
+Sharks
+Him: "Oh, that's kinda interesting. You know a lotta stuff huh? Guess I don't feel the same is all.[INCREMENT_PROPERTY(*Confused, 1)]"
+-> Section 7
+}
+{
+Sorry
+Him: "Oh, it was nothing, no worries...
+Him: "Anyways, you seem to like the poppers at least.[INCREMENT_PROPERTY(*Disinterested, 1)]"
+-> Section 7
+}
+{
+Section 7
+[MAX(Happy, Mad, Confused, Disinterested)]
+(max_tie and 1) -> Tiebreaker
+-> Ending
+}
+{
+Tiebreaker
+Him: "[SET_SPEED(0), DATE_JUMP]Hey. So, it's almost time to go, but I got a question for ya before we leave."
+Him: "How do you feel about me? Honestly? 
+Him: "I can't really get a read on what you're thinking about right now, but what I can do is ask you."
+Him: "I'm a pretty... Lonely person. I guess I've been on lots of dates, but all to no avail."
+Him: "Normally, I get a pretty good grip on how someone's feeling by the end of a date, but I just can't seem to pin you down."
+RESPONSES
+"I'm not sure, but I enjoyed my time!" -> TiebreakerUnsure
+"You've been kind of overbearing, it's getting on my nerves." ->TiebreakerRealization
+"Pin me down? I mean-" ->TiebreakerPinning
+"Oh, hmm..." -> TiebreakerHmm
+}
+{
+TiebreakerUnsure
+[INCREMENT_PROPERTY(*Happy, 1)]
+-> Ending
+}
+{
+TiebreakerRealization
+[INCREMENT_PROPERTY(*Mad, 1)]"
+-> Ending
+}
+{
+TiebreakerPinning
+[INCREMENT_PROPERTY(*Confused, 1)]
+-> Ending
+}
+{
+TiebreakerHmm
+[INCREMENT_PROPERTY(*Disinterested, 1)]" 
+-> Ending
+}
+{
+Ending
+[MAX(Happy, Mad, Confused, Disinterested)]
+(max_result == Happy) -> HappyEnding
+(max_result == Mad) -> MadEnding
+(max_result == Confused) -> ConfusedEnding
+-> DisinterestedEnding
+}
+{
+HappyEnding
+Him: "[SET_SPEED(0)]So, wanna head home? Don't worry, I'll drive."
+Him: "Hey, uhh... thanks for everything by the way. You've been great company, y'know."
+Him: "I guess it's kinda weird to ask so soon, but do you wanna hang out again?"
+Him: "I mean, you're my type of guy. Maybe we can work something out together."
+Him: "I'll warn ya though, I'm pretty unstable..."
+Him: "But it's been a while since I've met a guy like you. You're... different somehow."
+Him: "I know I come off as a bit of a jerk, but I promise I'll take good care of ya if you let me."
+}
+{
+MadEnding
+Him: "[SET_SPEED(0)]...Alright. Clearly, something's up with you. Why are you acting like you're irritated by me?"
+Him: "It's clear by what you've said that you don't care, so why bother?!"
+Him: "You want me to get better, but I can't see how your advice holds any weight when you act like that on a first date."
+Him: "Y'know what? I'm done with this. I pay for your food, and you're rude the whole time. Really?"
+Him: "Do you know how much that costed me?! What a waste."
+Him: "My patience has worn thin, and I'm not gonna take it from some brat who's livin' in some high-class apartment uptown."
+Him: "Get lost! Lose my number, I'm finished with you! You hear me, don't call back ya snarky loser!"
+}
+{
+ConfusedEnding
+Him: "[SET_SPEED(0)]Man, that was... Thanks for the date, I guess?"
+Him: "You're a funny guy, that's for sure."
+Him: "Haah, loved all the jokes." 
+Him: "Not a lot of guys have such a... unique sense of humor."
+Him: "..."
+Him: "I- uh... I'll call you."
+}
+{
+DisinterestedEnding
+Him: "[SET_SPEED(0)]...Alright. Well, you'd best be gettin' home now."
+Him: "I'm headin' out too, guess it's about time. It's a bit late and I've got.. Something to do in the morning."
+Him: "I'm a pretty busy guy, so it might be hard to get a hold of me."
+Him: "Hope you had fun, I'll be around or something like that."
+Him: "...see ya."
+}

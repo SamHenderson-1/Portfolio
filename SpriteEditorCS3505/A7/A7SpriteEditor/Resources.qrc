@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>onion.png</file>
+        <file>eraser.png</file>
+        <file>eyedropper.png</file>
+        <file>paintbrush.png</file>
+    </qresource>
+</RCC>

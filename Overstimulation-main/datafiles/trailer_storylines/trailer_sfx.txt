@@ -1,0 +1,33 @@
+Only the Loud and Breadsticks responses in this dialogue
+file have sfx.
+
+{
+Start
+Him: "[DATE_JUMP]So... isn't it just the best here? [DATE_JUMP]Y'know, I always save this place for people I really like."
+Him: "[DATE_JUMP]It's an atmosphere you can't find in any other place. I don't know how to describe it..."
+Him: "[DATE_JUMP]Why don't you do it for me? [DATE_JUMP]Whaddya think of this place?"
+RESPONSES
+"I think it's great! Love the 80's dive bar aesthetic." -> Great
+"The band is kind of loud." -> Loud
+"I think I'll get the breadsticks." -> Breadsticks
+"Hmm... I don't know." -> Hmm
+}
+{
+Great
+Him: "[DATE_JUMP]Wow, you noticed that? A man of good taste is one I can get along with."
+}
+{
+Loud
+Him: [DATE_JUMP, SOUND_BLOCK(shocked)]"Oh, yeah I guess, I'm a big fan of that kinda thing so I'll have to agree to disagree there."
+}
+{
+Breadsticks
+Him: "[DATE_JUMP, SOUND(confused)]Huh?"
+Him: "Okay... I think I'll get us a round of drinks, [DATE_JUMP]sound good?"
+}
+{
+Hmm
+Him: "...oh, you look sorta lost in thought."
+Him: ...
+Him: "Guess it's a lot to take in, huh."
+}

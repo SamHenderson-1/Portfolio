@@ -1,0 +1,30 @@
+{
+Start
+[MAX(1,2,1,-3,2,3)]
+(max_tie and 1) -> Tie
+(max_result == 3) -> No Tie 3
+(max_result == 2) -> No Tie 2
+(max_result == 1) -> No Tie 1
+-> No Tie
+}
+{
+Tie
+Hmm... There was a tie...
+We'll have to do something about that
+}
+{
+No Tie 3
+The max value was 3!
+}
+{
+No Tie 2
+The max value was 2!
+}
+{
+No Tie 1
+The max value was 1!
+}
+{
+No Tie
+The max value was not 1, 2, nor 3!
+}

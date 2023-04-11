@@ -1,0 +1,15 @@
+C:\Users\hsund\source\repos\ArraySearch\bin\Debug\net6.0\ArraySearch.exe
+C:\Users\hsund\source\repos\ArraySearch\bin\Debug\net6.0\ArraySearch.deps.json
+C:\Users\hsund\source\repos\ArraySearch\bin\Debug\net6.0\ArraySearch.runtimeconfig.json
+C:\Users\hsund\source\repos\ArraySearch\bin\Debug\net6.0\ArraySearch.dll
+C:\Users\hsund\source\repos\ArraySearch\bin\Debug\net6.0\ArraySearch.pdb
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ArraySearch.csproj.AssemblyReference.cache
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ArraySearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ArraySearch.AssemblyInfoInputs.cache
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ArraySearch.AssemblyInfo.cs
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ArraySearch.csproj.CoreCompileInputs.cache
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ArraySearch.dll
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\refint\ArraySearch.dll
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ArraySearch.pdb
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ArraySearch.genruntimeconfig.cache
+C:\Users\hsund\source\repos\ArraySearch\obj\Debug\net6.0\ref\ArraySearch.dll
